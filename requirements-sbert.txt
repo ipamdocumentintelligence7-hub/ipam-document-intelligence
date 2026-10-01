@@ -1,0 +1,3 @@
+# Optional but RECOMMENDED for the defence: real Sentence-BERT semantic search.
+# Big download (about 200 MB + 90 MB model). Do it once on a good internet connection.
+sentence-transformers

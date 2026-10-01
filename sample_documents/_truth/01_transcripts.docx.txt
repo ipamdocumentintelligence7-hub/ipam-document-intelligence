@@ -1,0 +1,18 @@
+STUDENT RESULT SLIP
+Institute of Public Administration and Management (IPAM)
+Student Name: Sorie Kamara
+Student ID: 11322
+Programme: Diploma in Information Technology
+Academic Year: 2024/2025
+Semester: One
+Course Code  Course Title  Credit  Grade  Grade Point
+IT153  Organisational Behaviour  3 credits  Grade C  Points 2.0
+IT408  Computer Networks  3 credits  Grade B  Points 3.0
+IT385  Business Statistics  3 credits  Grade B  Points 3.0
+IT394  Public Finance  3 credits  Grade D  Points 1.0
+IT352  Principles of Management  3 credits  Grade B  Points 3.0
+Semester GPA: 2.4
+Cumulative GPA: 2.37
+Remarks: Proceed to next level
+Issued by the Office of the Registrar. Grades are subject to Senate approval.
+Please contact the relevant office for any clarification.

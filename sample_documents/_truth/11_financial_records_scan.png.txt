@@ -1,0 +1,7 @@
+SUPPLIER INVOICE
+Invoice No: INV4652
+Supplier: Salone Print Works
+Item: toner cartridges
+Quantity: 10  Unit price: Le 608  Total: Le 6,080
+GST 15% included. Payment due within 30 days.
+Approved for payment by the Bursar.

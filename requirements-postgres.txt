@@ -1,0 +1,2 @@
+# Optional: only if you want PostgreSQL instead of the built-in SQLite database.
+psycopg2-binary

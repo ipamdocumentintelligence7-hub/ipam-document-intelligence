@@ -1,0 +1,67 @@
+======================================================================
+1. DOCUMENT CLASSIFICATION  (train 210 docs / test 70 docs)
+======================================================================
+Clean text                                       accuracy = 1.000
+Noisy text (5% OCR-style character errors)       accuracy = 1.000
+Very noisy text (12% character errors)           accuracy = 1.000
+
+                      precision    recall  f1-score   support
+
+Administrative Memos      1.000     1.000     1.000        18
+           Admission      1.000     1.000     1.000        18
+   Financial Records      1.000     1.000     1.000        17
+         Transcripts      1.000     1.000     1.000        17
+
+            accuracy                          1.000        70
+           macro avg      1.000     1.000     1.000        70
+        weighted avg      1.000     1.000     1.000        70
+
+Confusion matrix (rows = true, columns = predicted): ['Administrative Memos', 'Admission', 'Financial Records', 'Transcripts']
+[[18  0  0  0]
+ [ 0 18  0  0]
+ [ 0  0 17  0]
+ [ 0  0  0 17]]
+Saved evaluation/confusion_matrix.png
+Average classification time: 0.3 ms per document
+
+======================================================================
+2. OCR / DOCUMENT INGESTION  (sample_documents/)
+======================================================================
+01_transcripts.docx                      DOCX reader        text similarity 1.000  OCR conf -  0.0s
+02_transcripts.pdf                       PDF text layer     text similarity 1.000  OCR conf -  0.1s
+03_transcripts_scan.png                  OCR (image)        text similarity 1.000  OCR conf 95%  1.2s
+04_admission.txt                         Plain text         text similarity 1.000  OCR conf -  0.0s
+05_admission.pdf                         PDF text layer     text similarity 1.000  OCR conf -  0.0s
+06_admission_scan.pdf                    OCR (scanned PDF)  text similarity 1.000  OCR conf 95%  1.3s
+07_administrative_memos.txt              Plain text         text similarity 1.000  OCR conf -  0.0s
+08_administrative_memos.docx             DOCX reader        text similarity 1.000  OCR conf -  0.0s
+09_administrative_memos_scan.pdf         OCR (scanned PDF)  text similarity 1.000  OCR conf 96%  1.0s
+10_financial_records.pdf                 PDF text layer     text similarity 1.000  OCR conf -  0.0s
+11_financial_records_scan.png            OCR (image)        text similarity 1.000  OCR conf 96%  0.6s
+12_financial_records.docx                DOCX reader        text similarity 1.000  OCR conf -  0.0s
+Average text similarity on scanned files: 1.000  (1.000 = perfect)
+
+======================================================================
+3. SEMANTIC SEARCH  (relevance = document is in the expected category)
+======================================================================
+Search engine used: LSA fallback (TF-IDF + SVD)
+Indexed: 70 documents, 87 passages
+  students who have not paid their tuition                P@5=0.60  top hit correct
+  receipt for payment of examination fee                  P@5=1.00  top hit correct
+  supplier invoice for printer paper                      P@5=0.60  top hit correct
+  quarterly income and expenditure of the institute       P@5=1.00  top hit correct
+  grades and GPA of a student                             P@5=1.00  top hit correct
+  official results for the semester                       P@5=0.60  top hit correct
+  courses taken and marks obtained                        P@5=0.00  top hit WRONG
+  academic record of a diploma student                    P@5=0.60  top hit correct
+  letter offering a place on a programme                  P@5=1.00  top hit correct
+  application form for new applicants                     P@5=1.00  top hit correct
+  entry requirements and WASSCE results                   P@5=1.00  top hit correct
+  admission committee decisions                           P@5=1.00  top hit correct
+  notice about a staff meeting                            P@5=0.80  top hit correct
+  instruction to lecturers about submitting grades        P@5=0.60  top hit correct
+  public holiday closure of the institute                 P@5=0.20  top hit correct
+  memo from the registrar to all staff                    P@5=1.00  top hit correct
+Mean Precision@5 = 0.750
+Mean Reciprocal Rank (MRR) = 0.938
+Average search time = 0.2 ms

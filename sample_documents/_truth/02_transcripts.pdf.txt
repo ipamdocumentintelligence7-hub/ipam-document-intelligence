@@ -1,0 +1,18 @@
+EXAMINATION RESULTS SHEET
+Institute of Public Administration and Management (IPAM)
+Student Name: Hannah Koroma
+Student ID: 19460
+Programme: Diploma in Accounting
+Academic Year: 2022/2023
+Semester: Two
+Course Code  Course Title  Credit  Grade  Grade Point
+IT363  Business Statistics  3 credits  Grade A  Points 4.0
+IT140  Computer Networks  3 credits  Grade A  Points 4.0
+IT275  Systems Analysis and Design  3 credits  Grade A  Points 4.0
+IT386  Human Resource Planning  3 credits  Grade A  Points 4.0
+IT250  Programming Fundamentals  3 credits  Grade B  Points 3.0
+Semester GPA: 3.8
+Cumulative GPA: 3.72
+Status: Good academic standing
+Issued by the Office of the Registrar. Grades are subject to Senate approval.
+Outstanding fees must be cleared before results are released.

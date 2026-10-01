@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>IPAM Document Intelligence System</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- LOGIN -->
+<section id="login-view" class="login-wrap">
+  <div class="card login-card">
+    <div class="logo">IPAM</div>
+    <h1>Document Intelligence System</h1>
+    <p class="muted">Explainable AI for document classification and semantic search</p>
+    <label>Username</label><input id="login-user" autocomplete="username">
+    <label>Password</label><input id="login-pass" type="password" autocomplete="current-password">
+    <button id="login-btn" class="btn primary wide">Log in</button>
+    <p id="login-error" class="error"></p>
+    <details class="demo"><summary>Demo accounts (for the defence)</summary>
+      <table>
+        <tr><td>superadmin</td><td>Admin@123</td><td>System SuperAdmin</td></tr>
+        <tr><td>staff</td><td>Staff@123</td><td>Administrative Staff</td></tr>
+        <tr><td>deptadmin</td><td>Dept@123</td><td>Departmental Admin</td></tr>
+      </table>
+    </details>
+  </div>
+</section>
+
+<!-- MAIN APP -->
+<section id="app-view" hidden>
+  <header class="topbar">
+    <div><strong>IPAM</strong> Document Intelligence System</div>
+    <div class="who"><span id="who-name"></span> <span id="who-role" class="pill"></span>
+      <button id="logout-btn" class="btn small">Log out</button></div>
+  </header>
+  <nav id="nav" class="tabs"></nav>
+  <div id="toast" class="toast" hidden></div>
+  <main id="main"></main>
+</section>
+
+<!-- DOCUMENT MODAL -->
+<div id="modal" class="modal" hidden>
+  <div class="modal-box"><button id="modal-close" class="btn small close">Close</button><div id="modal-body"></div></div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
